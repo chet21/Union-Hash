@@ -1,0 +1,56 @@
+{#<div id="enter_form">#}
+    {#<div id="enter_wrap" style="position: relative; margin: auto; margin-top: 50px; width: 300px; height: 350px; background: white; z-index: 1000">#}
+        {#<div style="position: absolute; top: -12.5px; left: 287.5px; width: 23px; height: 23px; border: 1px white; z-index: 2000;">#}
+            {#<img class="cloce_ico" width="25" height="25" src="/src/img/cloce_ico.png">#}
+        {#</div>#}
+        {#<div style="margin: 0 auto; padding-top: 25px; width: 170px">#}
+            {#<form id="enter_form_data">#}
+                {#<div>#}
+                    {#<p align="center">{{ lang['login'] }}</p>#}
+                {#</div>#}
+                {#<div>#}
+                    {#<p>{{ lang['e-mail'] }}</p>#}
+                    {#<input type="email" name="login">#}
+                {#</div>#}
+                {#<div style="margin-top: 15px">#}
+                    {#<p>{{ lang['password'] }}</p>#}
+                    {#<input type="password" name="password">#}
+                {#</div>#}
+                {#<div style="padding-top: 15px">#}
+                    {#<input type="button" value="{{ lang['enter'] }}" onclick="author()">#}
+                {#</div>#}
+            {#</form>#}
+        {#</div>#}
+        {#<div class="err"></div>#}
+    {#</div>#}
+{#</div>#}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-3 form_2 smart_enter_form">
+            <div class="hide" style="position: absolute; top: -12.5px; left: 267.5px; width: 23px; height: 23px; z-index: 2000;">
+                <img class="close_ico" width="25" height="25" src="/src/img/cloce_ico.png">
+            </div>
+            <div class="line" style="position: absolute; top: 0; left: 0; width: 0; height: 6px; background: #FFC501"></div>
+            <!--<div class="box" style="position: absolute; bottom: 0; width: 100%; height: 180px; background: white; margin-left: 10px; margin-right: 10px; margin-bottom: 10px; opacity: 0 "></div>-->
+            <div class="hide" style="position: absolute; top: 30px; left: 65px; font-size: 24px;"> Авторизація</div>
+            <div class="hide" style="position: absolute; top: 100px; left: 35px">
+                <form>
+                    <div class="form_div">
+                        <img class="img" width="20" src="/src/img/index_ico_i3/icons8-contacts-50.png">
+                        <input class="input" type="text" placeholder="login" >
+                    </div>
+                    <div class="form_div">
+                        <img class="img" width="20" src="/src/img/index_ico_i3/icons8-lock-50.png">
+                        <input class="input" type="text" placeholder="password">
+                    </div>
+                    <div style="margin-top: 15px; background: #FFC501; width: 110px">
+                        <!--<img class="img" width="20" src="icons8-lock-50.png">-->
+                        <input class="button" type="button" value="Ввійти">
+                        <img class="img" style="width: 20px";  src="/src/img/index_ico_i3/icons8-right-50.png">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

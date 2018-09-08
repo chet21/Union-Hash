@@ -1,0 +1,48 @@
+.form_2{
+    position: absolute;
+    top: 100px;
+    /*left: 35%;*/
+    /*height: -1px;*/
+    width: 275px;
+    background: url(/src/img/index_ico_i3/3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 100000;
+    display: none;
+}
+
+.input{
+    background: #FFC501;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    outline: none;
+}
+.img{
+    display: inline-block;
+    margin: 5px;
+}
+.form_div{
+    background: #FFC501;
+    margin-top: 15px;
+}
+.button{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 5px;
+    /*background: rgba();*/
+    outline: none;
+    border: none;
+    display: inline-block;
+    color: white;
+}
+::-webkit-input-placeholder {color: white;}
+::-moz-placeholder          {color: white;}/* Firefox 19+ */
+:-moz-placeholder           {color: white;}/* Firefox 18- */
+:-ms-input-placeholder      {color: white;}
+
+.hide{
+    display: none;
+}

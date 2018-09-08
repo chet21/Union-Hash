@@ -1,0 +1,46 @@
+{% extends "user.html.twig" %}
+{% block content %}
+    <div class="row">
+        {% if table != null %}
+            <div class="col-xl-12 inside_block">
+                <div class="white_line">
+                    <span class="big_font">{{ lang['charge_statistics'] }}</span>
+                </div>
+                <div style="margin-top: 15px; color: black; padding-bottom: 15px">
+                    <table class="table-striped table-hover" style="background: white; width: 100%; ">
+                        <tr>
+                            <td colspan="4" class="inside_td text-align">
+                                <span class="big_font">{{ lang['daily_profit'] }}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="inside_td">{{ lang['date'] }}</td>
+                            <td class="inside_td">{{ lang['eth'] }}</td>
+                            <td class="inside_td">{{ lang['fee'] }}</td>
+                            <td class="inside_td">{{ lang['total'] }}</td>
+                        </tr>
+                        {% for item in table %}
+                            <tr>
+                                <td class="inside_td">{{ item.time }}</td>
+                                <td class="inside_td">{{ item.eth }}</td>
+                                <td class="inside_td">{{ item.fee }}</td>
+                                <td class="inside_td">{{ item.total }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        {% else %}
+            <div class="col-xl-12 inside_block">
+                <div class="white_line">
+                    <span class="big_font">{{ lang['data_not_found'] }}</span>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+
+
+
+
+

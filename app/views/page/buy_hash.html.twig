@@ -1,0 +1,48 @@
+{% extends "user.html.twig" %}
+{% block content %}
+    <div class="row">
+        <div class="col-lg-12 inside_block">
+            <div style="padding-top: 5px; padding-bottom: 5px; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: white; ">
+                <span style="font-size: 24px">{{ lang['user_used_mh'] }}</span>
+            </div>
+            <div style="padding-top: 5px; padding-bottom: 5px;">
+                <span style="font-size: 24px">{{ user_hash_rate }} {{ lang['mh'] }}</span>
+            </div>
+        </div>
+        <div class="col-lg-12 inside_block">
+            <div style="padding-top: 5px; padding-bottom: 5px; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: white; ">
+                <span style="font-size: 24px">{{ lang['free_mh'] }}</span>
+            </div>
+            <div style="padding-top: 5px; padding-bottom: 5px;">
+                <span style="font-size: 24px">{{ free_hash_rate }} {{ lang['mh'] }}</span>
+            </div>
+        </div>
+        <div class="col-lg-12 inside_block">
+            <div style="padding-top: 5px; padding-bottom: 5px; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: white; ">
+                <span style="font-size: 24px">{{ lang['buy_mh'] }} {{ lang['mh'] }}</span>
+            </div>
+            <div style="padding-top: 5px; padding-bottom: 5px;">
+                <span style="font-size: 24px">{% include "form/buy_hash.html.twig" %}</span>
+            </div>
+            <div id="err_buy"></div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+        <div class="col-lg-12">
+            <table border="1" class="table-striped table-hover" style="border: solid 1px white; width: 100%; background: white">
+                <tr>
+                    <td class="inside_td" style="text-align: center; width: 300px">{{ lang['order_status'] }}</td>
+                    <td class="inside_td" style="text-align: center; width: 200px">{{ lang['power'] }}</td>
+                    <td class="inside_td" style="text-align: center; width: 200px">{{ lang['order_date'] }}</td>
+                </tr>
+                {% for item in orders_on_wait %}
+                    <tr>
+                        <td class="inside_td" style="text-align: center">{{ lang['contract_status'] }}</td>
+                        <td class="inside_td" style="text-align: center">{{ item.power }} {{ lang['mh'] }}</td>
+                        <td class="inside_td" style="text-align: center">{{ item.dl }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}

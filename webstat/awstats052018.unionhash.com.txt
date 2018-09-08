@@ -1,0 +1,371 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201805 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.unionhash.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1993                
+POS_TIME 2675                
+POS_VISITOR 7393                
+POS_DAY 8859                
+POS_DOMAIN 3452                
+POS_LOGIN 3681                
+POS_ROBOT 3836                
+POS_WORMS 4207                
+POS_EMAILSENDER 4338                
+POS_EMAILRECEIVER 4481                
+POS_SESSION 9509                
+POS_SIDER 9676                
+POS_FILETYPES 4616                
+POS_DOWNLOADS 4822                
+POS_OS 4893                
+POS_BROWSER 5033                
+POS_SCREENSIZE 5574                
+POS_UNKNOWNREFERER 5648                
+POS_UNKNOWNREFERERBROWSER 5845                
+POS_ORIGIN 5927                
+POS_SEREFERRALS 6062                
+POS_PAGEREFS 6206                
+POS_SEARCHWORDS 6354                
+POS_KEYWORDS 6506                
+POS_MISC 2338                
+POS_ERRORS 6565                
+POS_CLUSTER 3537                
+POS_SIDER_404 6668                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20180601000001 257 28875 5897738954970
+FirstTime 20180501022906
+LastTime 20180531143222
+LastUpdate 20180601041740 257 0 256 0 0
+TotalVisits 54                  
+TotalUnique 33                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 37                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 15 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 405 415 116283
+1 3 3 46367 406 408 88142
+2 5 9 438892 406 415 113640
+3 3 3 21711 403 403 85622
+4 4 8 244304 405 407 91124
+5 2 27 505584 413 437 173621
+6 5 5 13450 405 405 86684
+7 4 6 223053 403 404 86542
+8 2 5 16982 406 412 108834
+9 0 0 0 404 408 91365
+10 3 28 510842 405 408 88582
+11 1 3 22229 404 404 87731
+12 1 1 3118 405 406 89757
+13 0 0 0 405 408 98232
+14 2 27 507724 410 413 96181
+15 3 3 19571 404 408 305615
+16 2 27 505584 392 397 91302
+17 13 74 1365508 412 417 102572
+18 7 9 229084 405 409 94275
+19 2 4 218957 410 420 128639
+20 2 2 1956 404 404 87731
+21 3 5 219935 406 413 111639
+22 1 1 978 405 409 100211
+23 4 4 21680 408 417 113083
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 72 254 5137509
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 7
+wget 8912 1880432 20180531235501 0
+googlebot 104 490902 20180530131044 16
+no_user_agent 16 44848 20180526051147 0
+yandex 4 9323 20180524044100 1
+python 1 978 20180511170212 0
+unknown 1 2109 20180508183201 1
+favicon 1 3118 20180526162151 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+css 24 107580 0 0
+png 108 3115242 0 0
+php 1 2109 0 0
+html 62 240093 0 0
+js 23 78251 0 0
+jpg 27 1584765 0 0
+scss 8 7360 0 0
+Unknown 1 2109 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/robots.txt 18 0 19866
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 10
+linuxandroid 4
+winlong 1
+winxp 14
+winnt 194
+linux 1
+winvista 4
+win7 7
+macosx 23
+win2003 3
+Unknown 3
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 27
+firefox32.0 1
+firefox57.0 1
+firefox53.0 1
+chrome66.0.3359.139 78
+chrome34.0.1847.137 1
+chrome34.0.1847.131 2
+chrome58.0.3029.81 1
+chrome5.0.375.99 1
+chrome34.0.1847.114 3
+chrome31.0.1650.57 1
+chrome62.0.3202.94 2
+chrome58.0.3029.110 3
+safari10.1.1 1
+chrome46.0.2490.80 2
+msie8.0 12
+chrome45.0.2454.94 1
+chrome61.0.3163.100 14
+mozilla 4
+chrome57.0.2987.133 1
+msie7.0 3
+firefox59.0 1
+chrome34.0.1847.116 1
+chrome11.0.696.12 1
+chrome58.0.3029.96 1
+safari 1
+safari7.1 4
+chrome65.0.3325.181 112
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+Mozilla/5.0_(compatible;_Dataprovider.com;) 20180519012622
+Mozilla/5.0_(compatible;_ips-agent) 20180508183202
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 55 62
+From1 0 1
+From2 0 0
+From3 0 0
+From4 17 191
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+500 744 171120
+404 40 20371
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 21
+/wp-post.php 1 -
+/web-cache.php 2 -
+/sitemap.xml 2 -
+/robots.txt 15 -
+/include-sql.php 1 -
+/roots.php 1 -
+/Marvins.php 1 -
+/downloader/ 1 -
+/i4.html 1 -
+/shell.php 1 -
+/2.html 1 -
+/index.html 1 -
+/lieats.php 1 -
+/blog/ 1 http://unionhash.com/blog/
+/controller.php 1 -
+/1.html 1 -
+/configuration.php 1 -
+/index.php 1 -
+/src/img/index_ico_i3/2%20(1 4 http://unionhash.com/src/css/style.css
+/gtde.php 1 -
+/ads.txt 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 37
+91.224.201.71 11 51 1419073 20180514174128
+13.56.232.243 11 11 27878 20180531081212
+163.172.4.153 8 8 18524 20180531143222
+167.114.209.28 3 3 46367 20180519012623
+192.162.242.170 3 27 375321 20180513174057
+192.3.182.215 2 4 218957 20180501022912
+45.58.49.53 2 4 218957 20180510025504
+104.223.103.191 2 4 218957 20180503211349
+45.58.40.179 2 4 218957 20180513041952
+45.63.68.199 2 4 218957 20180506192008
+202.172.25.16 0 1 2109 
+104.223.119.118 1 26 504606 20180521142336
+211.115.79.122 1 3 22229 20180524040628
+192.162.102.25 1 1 2109 20180511235917
+38.100.21.62 1 3 22229 20180514113354
+138.201.60.47 1 1 15475 20180527035235
+52.214.252.52 1 1 978 20180513064734
+138.68.180.18 1 1 3118 20180530073803
+194.44.247.218 1 1 15475 20180529155622
+198.46.230.112 1 26 504606 20180517100209
+117.3.67.167 1 1 387 20180503174910
+69.58.178.59 1 1 2109 20180508183202
+45.35.109.220 1 1 3118 20180520085357
+45.35.63.231 0 1 1817 
+104.144.194.27 1 26 504606 20180525053351
+173.244.48.44 2 2 1956 20180503075523
+45.35.167.69 0 1 2077 
+37.187.148.221 2 2 4218 20180511170212
+45.35.167.89 0 1 6852 
+51.15.196.209 1 1 15475 20180515232331
+180.169.191.142 1 1 978 20180503200903
+93.179.68.152 1 1 3118 20180515101127
+155.94.66.238 1 26 504606 20180529160547
+91.210.145.196 1 1 3118 20180516102524
+216.145.17.190 1 1 3118 20180517180002
+54.67.59.131 2 2 1956 20180504232506
+34.244.224.35 1 1 3118 20180515065211
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 28
+20180501 3 6 222044 2
+20180502 2 2 1956 2
+20180503 5 7 221300 4
+20180504 1 1 978 1
+20180505 3 5 219935 2
+20180506 2 4 218957 1
+20180507 1 1 978 1
+20180508 5 7 222848 2
+20180509 1 1 978 1
+20180510 3 5 219935 2
+20180511 3 3 6327 2
+20180513 8 34 599352 5
+20180514 6 44 1001606 2
+20180515 3 3 21711 3
+20180516 2 2 6236 2
+20180517 2 27 507724 2
+20180518 1 1 3118 1
+20180519 4 4 49485 2
+20180520 2 5 16982 2
+20180521 1 26 504606 1
+20180522 1 1 3118 1
+20180523 1 1 3118 1
+20180524 2 4 25347 2
+20180525 1 26 504606 1
+20180527 3 3 21711 3
+20180529 3 28 523199 3
+20180530 1 1 3118 1
+20180531 2 2 6236 2
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 3
+30s-2mn 2
+0s-30s 51
+2mn-5mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 7
+/ 59 234805 53 45
+/src/scss/loader.scss 8 7360 0 7
+/i.html 1 1774 0 0
+/user/password 1 2109 1 0
+/i2.html 1 1767 0 0
+/kurd.php 1 2109 0 1
+/i3.html 1 1747 0 1
+END_SIDER

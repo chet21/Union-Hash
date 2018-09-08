@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/unionhash.com/webstat"
+AuthUserFile /var/www/chet21/data/etc/119671594.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

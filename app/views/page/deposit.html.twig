@@ -1,0 +1,47 @@
+{% extends "user.html.twig" %}
+{% block content %}
+    {% include "form/deposit.html.twig" %}
+    {% if data == false %}
+        <div class="row">
+            <div class="col-xl-12 inside_block">
+                <div class="white_line">
+                    <span>{{ lang['data_not_found'] }}</span>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="col-xl-12 inside_block" style="padding-bottom: 15px">
+                <div class="white_line">
+                    <span style="font-size: 24px">{{ lang['charge_statistics'] }}</span>
+                </div>
+                <div style="margin-top: 15px; color: black">
+                    <table class="table-striped table-hover" style="background: white; width: 100%" >
+                        <tr align="center">
+                            <td colspan="4">{{ lang['charge_statistics'] }}</td>
+                        </tr>
+                        <tr align="center">
+                            <td>{{ lang['payment_id'] }}</td>
+                            <td>{{ lang['payment_sum'] }}</td>
+                            <td>{{ lang['payment_status'] }}</td>
+                        </tr>
+                        {% for item in data %}
+                            <tr align="center">
+                                <td>{{ item.id }}</td>
+                                <td>{{ item.usd }}$</td>
+                                <td>
+                                    {% if item.status == 0 %}
+                                        <span style="color: red">{{ lang['payment_status_off'] }}</span>
+                                    {% elseif item.status == 1 %}
+                                        <span style="color: green">{{ lang['payment_status_on'] }}</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+

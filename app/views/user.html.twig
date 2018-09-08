@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+    <title>
+        {#LiveNewsUa |{% block title %}{% endblock %}#}
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Bree+Serif|Francois+One|Oswald" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    {#<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>#}
+    {#<script src="http://malsup.github.com/min/jquery.form.min.js"></script>#}
+    <script type="javascript" src="/src/js/lib_js/jquery.cookie.js"></script>
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+    </head>
+    <body style="background: #252831">
+    <div id="loader" class="loader"></div>
+    <div class="container-fluid">
+        <div class="container"  style="min-height: 50px; width: inherit; color: white; padding-top: 10px; margin-top: 5px; font-family: 'Oswald', sans-serif;">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="top_user_inform">Здравствуйте: {{ param.login }}</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="top_user_inform">Баланс eth: {{ param.data['eth_balance'] }}</div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="top_user_inform">Баланс USD: {{ param.data['usd_balance'] }} $</div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6">
+                    <div class="top_user_inform">Мощность: {{ param.data['su'] }} MH</div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1" style="margin-left: auto">
+                    <button onclick="out()">OUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluide">
+        <div class="container" style="min-height: 460px; margin-top: 15px; padding-top: 15px; border-top-width: 2px; border-top-style: solid; border-top-color: white;">
+            <div class="row row-centered">
+                <div class="col-lg-2 hidden-md hidden-sm-down">
+                    <div>
+                        {% for item in param['menu'] %}
+                            <div class="menu_item">
+                                <a  href="{{ item['link'] }}">{{ item['title'] }}</a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {#<div class="col-lg-2 col-md-12 col-sm-12 ">#}
+                    {#<div>#}
+                        {#{% for item in param['menu'] %}#}
+                            {#<div class="menu_item">#}
+                                {#<a  href="{{ item['link'] }}">{{ item['title'] }}</a>#}
+                            {#</div>#}
+                        {#{% endfor %}#}
+                    {#</div>#}
+                {#</div>#}
+                <div class="col-lg-7 col-md-6 hidden-sm hidden-xs" style="display: inline-block">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+                <div class="col-lg-2 col-md-3 hidden-sm hidden-xs inside_block" style="margin-left: auto;">
+                    <div style="padding-top: 5px; padding-bottom: 5px; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: white; ">
+                        <span style="font-size: 24px">Новости</span>
+                    </div>
+                    <div style="padding-top: 5px; padding-bottom: 5px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluide" >
+        <div class="container" style="height: 100px; border-top: solid 3px white; background: rgba(255,255,255,0.2)">
+
+        </div>
+    </div>
+    </body>
+<script src="/src/js/function.js?n=10125"></script>
+<script src="/src/js/test.js"></script>
+</html>

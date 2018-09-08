@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+    <head>
+        <title>
+            {#LiveNewsUa |{% block title %}{% endblock %}#}
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        {#<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>#}
+        <script src="http://malsup.github.com/min/jquery.form.min.js"></script>
+        <script type="javascript" src="/src/js/lib_js/jquery.cookie.js"></script>
+        <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+    </head>
+    <style>
+        .top1{
+            background: #3B0002;
+            opacity: 0.8;
+            height: 50px;
+
+        }
+        .top2{
+            width: 1400px;
+            background:  url("http://ubi/src/img/e27da87f09ff8b9.jpg");
+            background-position: center center ;
+        }
+        .top_row{
+            height: 350px;
+            color: white;
+            padding-top: 13px;
+        }
+        .logo{
+            height: 200px;
+        }
+    </style>
+    <body>
+    {% include 'form/enter.html.twig' %}
+    {% include 'form/reg.html.twig' %}
+        <div class="container-fluid top1">
+            <div class="container">
+                <div class="row top_row">
+                    <div class="col-lg-9 col-md-9 col-sm-6">
+                        <a>BTC:7800$ </a>
+                        <a>ETH:357$ </a>
+                        <a>XMR:130$</a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div>
+                            <a href="#" style="text-decoration: none; color: white" onclick="load_enter_form()">{{ lang['login'] }}</a>
+                            |
+                            <a href="#" style="text-decoration: none; color: white" onclick="load_reg_form()">  {{ lang['sign_up'] }}</a>
+                            <select id="select_lang">
+                                <option value="ua">Українська</option>
+                                <option value="ru">Русский</option>
+                                <option value="en">English</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row" style="background: #920003;">
+                {#<div class="logo col-lg-4 col-md-4 hidden-sm hidden-xs">100</div>#}
+                <div class="logo col-lg-12 col-md-12 col-xs-12 col-xs-12" style="color: white;  font-family: 'Oswald', sans-serif; padding-top: 20px;">
+                    <h1 style="font-size: 80px" align="center">The Union of Bitcoin investors</h1>
+                </div>
+                {#<div class="logo col-lg-4 col-md-4 hidden-sm hidden-xs">300</div>#}
+            </div>
+        </div>
+            {% block content %}
+            {% endblock %}
+        <div class="container-fluid" style="height: 200px; background: #191919; color: white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div>
+                            <p>Logo</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">Menu</div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">Tags</div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">SocialNetworks</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin: 0 auto">
+                    <p>Copyright &copy;2016 by Me</p>
+                </div>
+            </div>
+        </div>
+    </body>
+<script src="/src/js/search.js"></script>
+<script src="/src/js/test.js"></script>
+<script src="/src/js/function.js"></script>
+</html>

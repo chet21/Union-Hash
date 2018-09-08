@@ -1,0 +1,15 @@
+{% extends "info.html.twig" %}
+{% block content %}
+
+    <div class="container-fluid" style="position: absolute; height: 100%; width: 100%; background: #252831;">
+        <div class="container" style="">
+            <div class="row justify-content-center">
+                <div class="col-xl-7" style="background: rgba(255,255,255,0.9); margin-top: 20%; padding-top: 30px; padding-bottom: 30px">
+                    <div class="text-center">Оплата заказа: № {{ id }}</div>
+                    <div class="text-center">Сумма платежа: {{ amount }} USD</div>
+                    <div class="text-center" style="padding-top: 10px">{{ form | raw }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

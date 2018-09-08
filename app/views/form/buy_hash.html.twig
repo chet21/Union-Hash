@@ -1,0 +1,21 @@
+
+        <form id="new_contract">
+            <div class="row">
+                <div class="col-lg-3">
+                    <input class="form-control" id="buy_mh_input" type="number" name="mh" value="0" step="1">
+                </div>
+                <div class="col-lg-3">
+                    <input class="form-control" id="sum_in_usd" type="text" name="sum" value="0$" step="1" disabled>
+                    <input class="form-control" id="cours_usd" type="hidden" name="price" value="{{ price }}">
+                </div>
+                <div class="col-lg-12">
+                    <input class="" type="checkbox" name="check">
+                    <a style="color: white; font-size: 15px" href="#">{{ lang['rules_buy_contract'] }}</a>
+                </div>
+                <div class="col-lg-3">
+                    <input class="btn btn-primary" type="button" value="{{ lang['buy_mh'] }}" onclick="new_contract({{ free_hash_rate }})">
+                </div>
+            </div>
+        </form>
+
+
